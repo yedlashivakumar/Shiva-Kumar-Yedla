@@ -1,1 +1,558 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<style>
+    td {
+      text-align: center;
+      max-width: 100%;
+      font-size: larger;
+  }
+  .panel-body {
+    max-width: 80%;
+    margin: 0 auto;
+}
+    form#myForm {
+    text-align: center;
+}
+select {
+    width: 100%;
+    height: 34px;
+    font-size: larger;
+}
+input#date {
+    width: 50%;
+    height: 34px;
+    font-size: larger;
+}
+
+tr.odd.gradeX {
+    height: 50px;
+}
+input.messageCheckbox {
+    width: 25px;
+    height: 25px;
+}
+input#f_btn1 {
+    width: 50%;
+    height: 50px;
+}
+th {
+    padding: 20px;
+}
+.heading {
+    text-align: center;
+    color: crimson;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div class="panel-body">
+<div class="heading"><h1>AIML Omega III - II Attendance</h1></div>
+    <form method="post" name="google-sheet" id="myForm">
+    <table id="data-table" class="table table-striped table-bordered nowrap" width="100%">
+        <thead>
+            <tr>
+                <td>Mobile Number:<br><select id="mob_number" name="mob_number">
+                        <option>Select Name</option>
+                        <option value="9985068108">Preeti Mam</option>
+                        <option value="9865667733">Thiyagarajan sir</option>
+                        <option value="9943052222">Jim Reeves Sir</option>
+                        <option value="9585704896">Manoj Sagar Sir</option>
+                        <option value="9848354299">Revanth Sir</option>
+                        <option value="8885514060">Himaja Mam</option>
+                        <option value="9849191267">Ram Mohan Sir</option>
+                        <option value="9440599293">Shivasai</option>
+                        <option value="6309963958">Shivakumar</option>
+                        <option value="8008735913">Kishore</option>
+                        <option value="9346363212">Sravanthi</option>
+                        <option value="9676645768">Sreeja</option>
+                        
+                      </select></td>
+                <td>Date:<br><input type="date" id="date" name="date"></td>
+                <td>Session:<br><select id="session" name="session">
+                        <option>Select Session</option>
+                        <option value="FN">FN</option>
+                        <option value="AN">AN</option>
+                      </select></td>
+            </tr>
+            <tr>
+                <th>Roll Number</th>
+                <th>Absents</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd gradeX">
+                <td>451</td>
+                <td><input  class="messageCheckbox" type="checkbox" name="451"  value="451"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>452</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="452" value="452"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>453</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="453" value="453"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>454</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="454" value="454"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>455</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="455" value="455"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>456</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="456" value="456"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>457</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="457" value="457"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>458</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="458" value="458"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>459</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="459" value="459"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>460</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="460" value="460"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>462</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="462" value="462"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>463</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="463" value="463"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>464</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="464" value="464"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>465</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="465" value="465"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>466</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="466" value="466"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>467</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="467" value="467"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>468</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="468" value="468"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>469</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="469" value="469"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>470</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="470" value="470"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>471</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="471" value="471"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>472</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="472" value="472"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>473</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="473" value="473"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>474</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="474" value="474"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>475</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="475" value="475"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>476</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="476" value="476"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>477</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="477" value="477"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>478</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="478" value="478"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>479</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="479" value="479"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>480</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="480" value="480"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>481</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="481" value="481"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>482</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="482" value="482"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>483</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="483" value="483"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>484</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="484" value="484"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>485</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="485" value="485"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>486</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="486" value="486"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>487</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="487" value="487"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>488</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="488" value="488"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>489</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="489" value="489"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>491</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="491" value="491"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>492</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="492" value="492"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>493</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="493" value="493"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>494</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="494" value="494"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>495</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="495" value="495"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>496</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="496" value="496"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>497</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="497" value="497"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>498</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="498" value="498"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>499</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="499" value="499"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>500</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="500" value="500"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>501</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="501" value="501"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>502</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="502" value="502"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>503</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="503" value="503"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>504</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="504" value="504"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>505</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="505" value="505"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>506</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="506" value="506"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>507</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="507" value="507"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>508</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="508" value="508"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>509</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="509" value="509"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>510</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="510" value="510"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>511</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="511" value="511"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>512</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="512" value="512"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>513</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="513" value="513"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>514</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="514" value="514"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>515</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="515" value="515"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>516</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="516" value="516"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>517</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="517" value="517"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>518</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="518" value="518"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>519</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="519" value="519"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>520</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="520" value="520"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>521</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="521" value="521"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>522</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="522" value="522"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>523</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="523" value="523"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>524</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="524" value="524"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>525</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="525" value="525"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>526</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="526" value="526"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>527</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="527" value="527"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>528</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="528" value="528"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>529</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="529" value="529"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>530</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="530" value="530"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>531</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="531" value="531"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>532</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="532" value="532"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>533</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="533" value="533"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>534</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="534" value="534"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>535</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="535" value="535"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>536</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="536" value="536"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>537</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="537" value="537"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>538</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="538" value="538"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>539</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="539" value="539"/></td>
+            </tr>
+            <tr class="odd gradeX">
+                <td>540</td>
+                
+                <td><input class="messageCheckbox" type="checkbox" name="540" value="540"/></td>
+            </tr>
+                        
+                        
+
+        </tbody>
+    </table>
+    <input type="submit" name="submit" id="f_btn1" onclick="calculate_attendance()">
+    </form>
+</div>
+</html>
+<script>
+    function calculate_attendance() { 
+        var inputElements = document.getElementsByClassName('messageCheckbox');
+        var Mobileno = document.getElementById("mob_number").value;
+        var date = document.getElementById("date").value;
+       
+        var session = document.getElementById("session").value;
+        // window.alert(Mobileno + date + session);
+        // console.log(inputElements[3]);
+        checkedValue ="";
+        count = 0;
+    for(var i=0; inputElements[i]; ++i){
+      if(inputElements[i].checked){
+           checkedValue = checkedValue.concat(inputElements[i].value.toString(),",");
+           count ++;
+            
+      }
+    }
+    present = 88-count;
+    checkedValue = checkedValue.slice(0,-1)
+   window.location.replace("https://api.whatsapp.com/send?phone=+91"+Mobileno+"&text=Daily Attendance%0aClass Room: 2-006%0aDate: "+date+"%0aSession: "+session+"%0aSection: Omega%0aAbsentees No: "+checkedValue+"%0aAbsent: "+count+"%0aPresent: "+present+"%0aTotal: "+present+"/88")
+     window.alert("https://api.whatsapp.com/send?phone=+91"+Mobileno+"&amp;text=Daily Attendance%0aClass Room: 2-006%0aDate: "+date+"%0aSession: "+session+"%0aSection: Zeta%0aAbsentees No: "+checkedValue+"%0aAbsent: "+count+"%0aPresent: "+present+"%0aTotal: "+present+"/88");
+
+};
+
+</script>
